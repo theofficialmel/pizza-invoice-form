@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+h1,h2 {
+        border: 3px solid white;
+        background-color: rgba(0, 217, 255, 0.288);
+        padding-top: 10px;
+        padding-left: 1px;
+        padding-right: 10px;
+        font: bold 20px Arial, sans-serif;
+      
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+    }
+    </style>
 </head>
-<body>
+<body style="background-color: lightblue;">
+
     <h1>Customer name</h1>
     <form>
         <label for="fname">First name</label><br>
@@ -79,6 +100,7 @@
             <td>bacon sausage</td>
             <td>extra sausage</td>
         </tr>
+        <textarea name="special orders" id=""></textarea>
 
     </form>
 
