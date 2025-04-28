@@ -36,9 +36,9 @@ form.addEventListener("submit", (e) => {
         alert("Order placed successfully!");
     }
 }
-{}
-{}
-{}
+
+
+
 
 
 

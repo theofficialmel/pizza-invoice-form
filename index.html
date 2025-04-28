@@ -28,6 +28,8 @@ h1,h2,h4 {
 <body style="background-color: lightblue;">
   <script src="script.js" defer></script>
 
+  
+
 
     <h1>Icicle Pizza</h1>
     <h4>Customer name</h4>
@@ -143,6 +145,43 @@ h1,h2,h4 {
             <td>no cheese only crust</td>
         <label for="special-orders">Special Instructions:</label>
         <textarea name="special orders" id="special-orders" placeholder="Enter any special instructions here"></textarea>
+        <table id = "pizza-table" border="1" style="width:100%">
+          <tr>
+            <th name="fname">First Name</th>
+            <th name="lname">Last Name</th>
+
+          </tr>
+        </table>
+        <button type="button" onclick="addRow()">Add Row</button>
+        <script>
+            function addRow() {
+                const table = document.getElementById("pizza-table");
+                const row = table.insertRow(-1);
+                const cell1 = row.insertCell(0);
+                const l2.innerHTML = document.getElementById("lname").value;
+                cell1.textcontent = thompson;
+                cell2.textcontent = jackson;
+                row.insertCell(2).innerHTML = document.getElementById("pizza size").value;
+
+                table.appendChild(row);
+
+
+            }
+        </script>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Pizza Size</th>
+                <th>Toppings</th>
+                <th>Special Instructions</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Medium</td>
+                <td>Pepperoni, Mushrooms</td>
+                <td>Add salt & pepper</td>
+            </tr>
 
     </form>
     <input type = "submit" value = "submit">
